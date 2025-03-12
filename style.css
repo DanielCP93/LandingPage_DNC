@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    font-family: "Inter";    
+}
+
+#Logo{
+    width: 75px;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+#Title{
+    margin-left: 150px;
+    margin-top: 75px;   
+}
+
+#Paragraph{
+    margin-left: 150px;
+    margin-top: 35px;
+    padding-bottom: 100px;
+}
+
+#Header{
+    background-image: url(imagens/logoBackground.svg);
+    color: white
+    
+}
+
+#InformationalHeader{
+    background-color: #EAECE5;
+    width: 1775px;
+    height: 110px;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.icone{
+    margin: 0px 15px -13px 0px;
+}
+
+
+#videoSection{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: auto;
+    justify-content: center;
+    gap: 75px;
+    padding: 75px 100px 75px 100px;
+}
+
+#videoTitle{
+    color: #247BA0;
+}
+
+#Video{
+    margin: 0px 0px 0px 0px;
+}
+
+#carousel{
+    background: linear-gradient(#558CFF, #276BFF);  
+    padding: 50px;
+}
+
+#carouselTitle{
+    color: #EAECE5;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#div-cards{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cards{
+    margin-left: 50px;
+}
+
+#leftArrow{
+    display: none;
+}
+
+#bruna{
+    display: none;
+}
+
+.seta{
+    margin-top: 55%;
+    cursor: pointer;
+}
+
+#leftArrow:hover {
+    transform: translateX(-10px);
+    transition: 0.5s;
+}
+
+#rightArrow:hover {
+    transform: translateX(+10px);
+    transition: 0.5s;
+}
+
+#form{
+    text-align: center;
+}
+
+#titleForm {
+    font-size: 25px;
+    margin: 25px;
+    color: #383838;
+}
+
+input {
+    border-radius: 8px;
+    width: 325px;
+    height: 40px;
+    margin: 20px;
+    padding-left: 10px;
+    background-color: #EAECE5;
+    border: 0px;
+    transition: 0.5s;
+}
+
+input:focus {
+    box-shadow: 0px 0px 10px #3399ff;
+}
+
+button {
+    color: #EAECE5; 
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 50px;  
+    border: 0px;
+    background: linear-gradient(#558CFF, #276BFF);  
+}
+
+button:hover {
+    transform: scale3d(1.1, 1.1, 0.1);
+    box-shadow: 0px 15px 20px #00000080;
+}
