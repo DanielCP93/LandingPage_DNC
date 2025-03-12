@@ -1,6 +1,7 @@
 *{
     margin: 0px;
-    font-family: "Inter";    
+    font-family: "Inter";
+    white-space: nowrap;  
 }
 
 #Logo{
