@@ -22,7 +22,7 @@
 }
 
 #Header{
-    background-image: url(imagens/logoBackground.svg);
+    background-image: url(image/logoBackground.svg);
     color: white;
     max-width: 95.1rem;   
 }
@@ -38,7 +38,7 @@
     text-align: center;
 }
 
-.icone{
+.icon{
     margin: 0rem 0.9rem -0.8rem 0rem;
 }
 
@@ -92,7 +92,7 @@
     display: none;
 }
 
-.seta{
+.arrow{
     margin-top: 55%;
     cursor: pointer;
 }
