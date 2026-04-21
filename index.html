@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <!--Top Menu-->
 <body>
     <div id="Header">
-        <a href="https://www.escoladnc.com.br/"> <img id="Logo" src="./image/logo.svg" alt="ERROR, SORRY!!!"></a>
+        <a href="https://www.escoladnc.com.br/" target="_blank"> <img id="Logo" src="./image/logo.svg" alt="Logo da DNC"></a>
             <h1 id="Title">Dê os primeiros passos da <br> 
                            sua carreira em Tecnologia</h1>
             <p id="Paragraph">Inscreva-se no curso gratuito de Desenvolvedor Front-end <br> 
@@ -21,9 +21,9 @@
     </div>
 <!--Informational Menu-->
     <div id="InformationalHeader">
-        <p class="text"><img class="icon" src="icons/certificate.svg" alt="ERROR, SORRY!!!"> Certificado de conclusão</p>
-        <p class="text"><img class="icon" src="icons/clock.svg" alt="ERROR, SORRY!!!">4 horas de conteúdo</p>
-        <p class="text"><img class="icon" src="icons/camera.svg" alt="ERROR, SORRY!!!">Aulas online gravadas</p>
+        <p class="text"><img class="icon" src="icons/certificate.svg" alt="Imagem de certificado"> Certificado de conclusão</p>
+        <p class="text"><img class="icon" src="icons/clock.svg" alt="Imagem de relógio">4 horas de conteúdo</p>
+        <p class="text"><img class="icon" src="icons/camera.svg" alt="Imagem de câmera">Aulas online gravadas</p>
     </div>
 <!--Video--> 
     <div id="videoSection">
@@ -47,24 +47,25 @@
     <div id="carousel">
         <h1 id="carouselTitle" >Mais de 500 alunos já iniciaram seus estudos</h1>
             <div id="div-cards">
-                    <img id="leftArrow" onclick="ScrollLeft()" class="arrow" src="icons/leftArrow.svg" alt="ERROR!!!">
-                    <img id="leonardo" class="card" src="cards/leonardo.svg" alt="ERROR!!!">
-                    <img id="samantha" class="card" src="cards/samantha.svg" alt="ERROR!!!">
-                    <img id="bruna" class="card" src="cards/bruna.svg" alt="ERROR!!!">
-                    <img id="rightArrow" onclick="ScrollRight()" class="seta" src="icons/rightArrow.svg" alt="ERROR!!!">
+                    <img id="leftArrow" onclick="ScrollLeft()" class="arrow" src="icons/leftArrow.svg" alt="Seta para esquerda">
+                    <img id="leonardo" class="card" src="cards/leonardo.svg" alt="Comentário do aluno Leonardo">
+                    <img id="samantha" class="card" src="cards/samantha.svg" alt="Comentário do aluno Samantha">
+                    <img id="bruna" class="card" src="cards/bruna.svg" alt="Comentário do aluno Bruna">
+                    <img id="rightArrow" onclick="ScrollRight()" class="arrow" src="icons/rightArrow.svg" alt="Seta para direita">
             </div>
     </div>
 
 <!--Form-->
     <div id="form">
         <h1 id="titleForm">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
-        <form action="https://api.sheetmonkey.io/form/sL9pLUJX4ihMn8EgLfjNNg" method="post">
+        <form action="https://api.sheetmonkey.io/form/4WKhQGnx6WkY74RcsHPM1s" method="post" target="hiddenFrame" onsubmit="openLink()">
             <input type="text" placeholder="Nome" name="Name" required> <br>
-            <input type="email" placeholder="E-mail" name="E-mail" required> <br>
-            <input type="number" placeholder="Telefone" name="Phone" required> <br>
+            <input type="email" placeholder="E-mail" name="Email" required> <br>
+            <input type="tel" placeholder="Telefone" name="Phone" required> <br>
             <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
             <button type="submit"><b>Acessar detalhes do CURSO</b></button>
         </form>
+        <iframe name="hiddenFrame" style="display:none;"></iframe>
     </div>
 
     <script src="index.js"></script>

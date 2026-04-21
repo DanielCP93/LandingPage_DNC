@@ -1,35 +1,47 @@
-*{
+* {
     margin: auto;
     font-family: "Inter";
-    white-space: nowrap;  
+    box-sizing: border-box;
 }
 
-#Logo{
+/* ===== ESTILOS BASE (Desktop 1920px) ===== */
+
+#Logo {
     width: 5rem;
     margin: 3rem;
     margin-bottom: 0rem;
 }
 
-#Title{
+#Title {
     margin-left: 9.5rem;
-    margin-top: 4.5rem;   
+    margin-top: 4.5rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    white-space: normal;
 }
 
-#Paragraph{
+#Paragraph {
     margin-left: 9.5rem;
     margin-top: 2rem;
     padding-bottom: 6.3rem;
+    font-size: 1rem;
+    white-space: normal;
+    line-height: 1.6;
 }
 
-#Header{
+#Header {
     background-image: url(image/logoBackground.svg);
+    background-size: cover;
+    background-position: center;
     color: white;
-    max-width: 95.1rem;   
+    max-width: 95.1rem;
+    width: 100%;
 }
 
-#InformationalHeader{
+#InformationalHeader {
     background-color: #EAECE5;
     max-width: 95.1rem;
+    width: 100%;
     height: 6.8rem;
     display: grid;
     grid-auto-flow: column;
@@ -38,83 +50,111 @@
     text-align: center;
 }
 
-.icon{
-    margin: 0rem 0.9rem -0.8rem 0rem;
+.text {
+    white-space: normal;
+    font-size: 0.95rem;
 }
 
+.icon {
+    margin: 0rem 0.9rem -0.8rem 0rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
-#videoSection{
+#videoSection {
     display: grid;
     grid-auto-flow: column;
     grid-column: auto;
     justify-content: center;
     gap: 4.7rem;
-    padding: 4.7rem 6.25rem 4.7rem 6.25rem;
+    padding: 4.7rem 6.25rem;
+    max-width: 95.1rem;
+    width: 100%;
 }
 
-#videoTitle{
+#videoTitle {
     color: #247BA0;
+    font-size: 2rem;
+    line-height: 1.3;
+    white-space: normal;
 }
 
-#Video{
-    margin: 0rem 0rem 0rem 0rem
+#Video {
+    margin: 0rem;
+    width: 100%;
+    max-width: 575px;
+    height: auto;
+    aspect-ratio: 575/283;
 }
 
-#carousel{
-    background: linear-gradient(#558CFF, #276BFF);  
+#carousel {
+    background: linear-gradient(#558CFF, #276BFF);
     padding: 3.1rem;
     max-width: 95.1rem;
+    width: 100%;
 }
 
-#carouselTitle{
+#carouselTitle {
     color: #EAECE5;
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 3.1rem;
+    white-space: normal;
 }
 
-#div-cards{
+#div-cards {
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
     gap: 3.1rem;
+    align-items: center;
 }
 
-.cards{
+.cards {
     margin-left: 3.1rem;
 }
 
-#leftArrow{
+.card {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#leftArrow {
     display: none;
 }
 
-#bruna{
+#bruna {
     display: none;
 }
 
-.arrow{
-    margin-top: 55%;
+.arrow {
     cursor: pointer;
+    width:3rem;
+    height: 3rem;
+    transition: 0.3s ease;
 }
 
 #leftArrow:hover {
     transform: translateX(-10px);
-    transition: 0.5s;
 }
 
 #rightArrow:hover {
     transform: translateX(+10px);
-    transition: 0.5s;
 }
 
-#form{
+#form {
     text-align: center;
+    max-width: 95.1rem;
+    width: 100%;
+    padding: 3rem 0;
 }
 
 #titleForm {
     font-size: 1.5rem;
     margin: 1.5rem;
     color: #383838;
+    white-space: normal;
 }
 
 input {
@@ -126,25 +166,599 @@ input {
     background-color: #EAECE5;
     border: 0rem;
     transition: 0.5s;
+    font-size: 1rem;
 }
 
 input:focus {
     box-shadow: 0rem 0rem 0.625rem #3399ff;
+    outline: none;
 }
 
 button {
-    color: #EAECE5; 
+    color: #EAECE5;
     width: 15.625rem;
     height: 2.5rem;
     cursor: pointer;
     border-radius: 0.5rem;
     margin-top: 0.9375rem;
-    margin-bottom: 3.125rem;  
+    margin-bottom: 3.125rem;
     border: 0rem;
-    background: linear-gradient(#558CFF, #276BFF);  
+    background: linear-gradient(#558CFF, #276BFF);
+    font-size: 1rem;
+    transition: 0.3s ease;
 }
 
 button:hover {
     transform: scale3d(1.1, 1.1, 0.1);
     box-shadow: 0rem 0.9375rem 1.25rem #00000080;
+}
+
+/* ===== 4K (2560px e acima) ===== */
+@media (min-width: 2560px) {
+    #Logo {
+        width: 7rem;
+        margin: 4rem;
+    }
+
+    #Title {
+        margin-left: 12rem;
+        margin-top: 5rem;
+        font-size: 3.5rem;
+    }
+
+    #Paragraph {
+        margin-left: 12rem;
+        margin-top: 3rem;
+        padding-bottom: 8rem;
+        font-size: 1.25rem;
+    }
+
+    #InformationalHeader {
+        height: 8rem;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #videoSection {
+        gap: 6rem;
+        padding: 6rem 8rem;
+    }
+
+    #videoTitle {
+        font-size: 2.5rem;
+    }
+
+    #Video {
+        max-width: 800px;
+    }
+
+    #carousel {
+        padding: 4rem;
+    }
+
+    #carouselTitle {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    #div-cards {
+        gap: 4rem;
+    }
+
+    .arrow {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #titleForm {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    input {
+        width: 25rem;
+        height: 3rem;
+        margin: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    button {
+        width: 20rem;
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* ===== Desktop Grande (1920px - 2559px) ===== */
+@media (min-width: 1920px) and (max-width: 2559px) {
+    #Logo {
+        width: 5.5rem;
+        margin: 3.5rem;
+    }
+
+    #Title {
+        margin-left: 10rem;
+        font-size: 2.8rem;
+    }
+
+    #Paragraph {
+        margin-left: 10rem;
+        font-size: 1.1rem;
+    }
+
+    #InformationalHeader {
+        height: 7.5rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    #videoSection {
+        gap: 5rem;
+        padding: 5rem 7rem;
+    }
+
+    #videoTitle {
+        font-size: 2.2rem;
+    }
+
+    #Video {
+        max-width: 650px;
+    }
+}
+
+/* ===== Tablet Grande (1024px - 1919px) ===== */
+@media (min-width: 1024px) and (max-width: 1919px) {
+    #Logo {
+        width: 4rem;
+        margin: 2rem;
+        margin-bottom: 0;
+    }
+
+    #Title {
+        margin-left: 7rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+
+    #Paragraph {
+        margin-left: 7rem;
+        margin-top: 1.5rem;
+        padding-bottom: 4rem;
+        font-size: 0.9rem;
+    }
+
+    #InformationalHeader {
+        height: 5.5rem;
+        padding: 0 1rem;
+    }
+
+    .text {
+        font-size: 0.85rem;
+    }
+
+    .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    #videoSection {
+        gap: 3rem;
+        padding: 3rem 4rem;
+        grid-auto-flow: row;
+    }
+
+    #videoTitle {
+        font-size: 1.7rem;
+    }
+
+    #Video {
+        max-width: 100%;
+        max-width: 500px;
+    }
+
+    #carousel {
+        padding: 2.5rem;
+    }
+
+    #carouselTitle {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    #div-cards {
+        gap: 2rem;
+    }
+
+    .arrow {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    #titleForm {
+        font-size: 1.3rem;
+        margin: 1.2rem;
+    }
+
+    input {
+        width: 18rem;
+        height: 2.2rem;
+        margin: 1rem;
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 14rem;
+        height: 2.2rem;
+        margin-top: 0.7rem;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== Tablet (768px - 1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    * {
+        white-space: normal;
+    }
+
+    #Logo {
+        width: 3.5rem;
+        margin: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    #Title {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #Paragraph {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    #InformationalHeader {
+        height: auto;
+        padding: 1.5rem;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .icon {
+        width: 1rem;
+        height: 1rem;
+        margin: 0;
+    }
+
+    #videoSection {
+        gap: 2rem;
+        padding: 2rem;
+        grid-auto-flow: row;
+    }
+
+    #videoTitle {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    #Video {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #carousel {
+        padding: 2rem 1.5rem;
+    }
+
+    #carouselTitle {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #div-cards {
+        gap: 1.5rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .arrow {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #form {
+        padding: 2rem 1.5rem;
+    }
+
+    #titleForm {
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+
+    input {
+        width: 100%;
+        max-width: 16rem;
+        height: 2rem;
+        margin: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 13rem;
+        height: 2rem;
+        margin-top: 0.6rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== Mobile Médio (480px - 767px) ===== */
+@media (min-width: 480px) and (max-width: 767px) {
+    * {
+        white-space: normal;
+    }
+
+    #Logo {
+        width: 3rem;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+    #Title {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    #Paragraph {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.8rem;
+        padding-bottom: 1.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #InformationalHeader {
+        height: auto;
+        padding: 1rem;
+        grid-auto-flow: row;
+        gap: 0.8rem;
+    }
+
+    .text {
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+    }
+
+    .icon {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin: 0;
+    }
+
+    #videoSection {
+        gap: 1.5rem;
+        padding: 1.5rem;
+        grid-auto-flow: row;
+    }
+
+    #videoTitle {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    #Video {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #carousel {
+        padding: 1.5rem 1rem;
+    }
+
+    #carouselTitle {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    #div-cards {
+        gap: 1rem;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    #rightArrow {
+        display: flex !important;
+    }
+
+    .arrow {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    #form {
+        padding: 1.5rem 1rem;
+    }
+
+    #titleForm {
+        font-size: 1rem;
+        margin: 0.8rem;
+    }
+
+    input {
+        width: 100%;
+        height: 1.8rem;
+        margin: 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    button {
+        width: 90%;
+        height: 1.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== Mobile Pequeno (até 479px) ===== */
+@media (max-width: 479px) {
+    * {
+        white-space: normal;
+    }
+
+    #Logo {
+        width: 2.5rem;
+        margin: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    #Title {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #Paragraph {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        margin-top: 0.6rem;
+        padding-bottom: 1rem;
+        font-size: 0.75rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    #InformationalHeader {
+        height: auto;
+        padding: 0.8rem;
+        grid-auto-flow: row;
+        gap: 0.6rem;
+    }
+
+    .text {
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+    .icon {
+        width: 0.8rem;
+        height: 0.8rem;
+        margin: 0;
+    }
+
+    #videoSection {
+        gap: 1rem;
+        padding: 1rem 0.8rem;
+        grid-auto-flow: row;
+    }
+
+    #videoTitle {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #Video {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    #carousel {
+        padding: 1rem 0.8rem;
+    }
+
+    #carouselTitle {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #div-cards {
+        gap: 0.8rem;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #rightArrow {
+        display: flex !important;
+    }
+
+    .arrow {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #form {
+        padding: 1rem 0.8rem;
+    }
+
+    #titleForm {
+        font-size: 0.9rem;
+        margin: 0.6rem;
+    }
+
+    input {
+        width: calc(100% - 1rem);
+        height: 1.7rem;
+        margin: 0.5rem;
+        padding-left: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    button {
+        width: calc(100% - 1rem);
+        height: 1.7rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.8rem;
+    }
 }

@@ -17,3 +17,7 @@ function ScrollLeft() {
     rightArrow.style = "display : flex"
     leftArrow.style = "display : none"
 }
+
+function openLink() {
+    window.open("https://www.escoladnc.com.br/", "_blank")
+}
