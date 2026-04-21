@@ -2,6 +2,8 @@
 
 Olá! Sou um desenvolvedor front-end iniciante e este é meu primeiro projeto. Criei esta landing page durante meus estudos na Escola DNC. Foi um desafio bem legal e aprendi muito!
 
+🔗 **Veja o projeto funcionando:** [GitHub Pages](https://danielcp93.github.io/LandingPage_DNC/)
+
 ## Sobre o Projeto
 
 Esta é uma página de captura de leads para o curso gratuito de Desenvolvedor Front-end da DNC School. A página tem várias seções legais e funciona bem em celular, tablet e computador.
