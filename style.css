@@ -236,7 +236,8 @@ button:hover {
     }
 
     #Video {
-        max-width: 800px;
+        max-width: 100%;
+        width: 800px;
     }
 
     #carousel {
@@ -311,7 +312,8 @@ button:hover {
     }
 
     #Video {
-        max-width: 650px;
+        max-width: 100%;
+        width: 650px;
     }
 }
 
@@ -353,7 +355,6 @@ button:hover {
     #videoSection {
         gap: 3rem;
         padding: 3rem 4rem;
-        grid-auto-flow: row;
     }
 
     #videoTitle {
@@ -362,7 +363,8 @@ button:hover {
 
     #Video {
         max-width: 100%;
-        max-width: 500px;
+        width: 500px;
+        margin-top: 1.7rem;
     }
 
     #carousel {
@@ -421,7 +423,6 @@ button:hover {
         margin-right: 1.5rem;
         margin-top: 2rem;
         font-size: 1.5rem;
-        text-align: center;
     }
 
     #Paragraph {
@@ -430,13 +431,11 @@ button:hover {
         margin-top: 1rem;
         padding-bottom: 2rem;
         font-size: 0.85rem;
-        text-align: center;
     }
 
     #InformationalHeader {
         height: auto;
         padding: 1.5rem;
-        grid-auto-flow: row;
         gap: 1rem;
     }
 
@@ -462,7 +461,6 @@ button:hover {
 
     #videoTitle {
         font-size: 1.4rem;
-        text-align: center;
     }
 
     #Video {
@@ -656,7 +654,6 @@ button:hover {
         margin-right: 0.8rem;
         margin-top: 1rem;
         font-size: 1.1rem;
-        text-align: center;
         line-height: 1.2;
     }
 
@@ -666,7 +663,6 @@ button:hover {
         margin-top: 0.6rem;
         padding-bottom: 1rem;
         font-size: 0.75rem;
-        text-align: center;
         line-height: 1.4;
     }
 
@@ -700,7 +696,6 @@ button:hover {
 
     #videoTitle {
         font-size: 1rem;
-        text-align: center;
         line-height: 1.2;
     }
 
