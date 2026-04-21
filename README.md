@@ -2,7 +2,7 @@
 
 Olá! Sou um desenvolvedor front-end iniciante e este é meu primeiro projeto. Criei esta landing page durante meus estudos na Escola DNC. Foi um desafio bem legal e aprendi muito!
 
-🔗 **Veja o projeto funcionando:** [GitHub Pages](https://danielcp93.github.io/LandingPage_DNC/)
+🔗 **Veja o projeto funcionando:** [Landing Page DNC](https://danielcp93.github.io/LandingPage_DNC/)
 
 ## Sobre o Projeto
 
